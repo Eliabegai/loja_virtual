@@ -29,12 +29,12 @@ public class NotaItemProduto implements Serializable {
 	private Double quantidade;
 
 	@ManyToOne
-	@JoinColumn(name = "produto_id", nullable = true, 
+	@JoinColumn(name = "produto_id", nullable = false, 
 	foreignKey = @ForeignKey(value = ConstraintMode.CONSTRAINT, name = "produto_fk"))
 	private Produto produto;
 
 	@ManyToOne
-	@JoinColumn(name = "nota_fiscal_compra_id", nullable = true, 
+	@JoinColumn(name = "nota_fiscal_compra_id", nullable = false, 
 	foreignKey = @ForeignKey(value = ConstraintMode.CONSTRAINT, name = "nota_fiscal_compra_fk"))
 	private NotaFiscalCompra notaFiscalCompra;
 

@@ -33,7 +33,7 @@ public class StatusRastreio implements Serializable {
 	private String status;
 
 	@ManyToOne 
-	@JoinColumn(name="venda_compra_loja_virtual_id",nullable=false,
+	@JoinColumn(name="venda_compra_loja_virtual_id", nullable=false,
 			foreignKey=	@ForeignKey(value = ConstraintMode.CONSTRAINT, name = "venda_compra_loja_virtual_fk"))
 	private VendaCompraLojaVirtual vendaCompraLojaVirtual;
 
